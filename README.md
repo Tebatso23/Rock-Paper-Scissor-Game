@@ -16,4 +16,4 @@ Result display showing who wins each round.
 
 ## Play the Game
 
-You can play the game <a href="" target="blank">here</a> !
+You can play the game <a href="https://tebatso23.github.io/Rock-Paper-Scissor-Game/" target="blank">here</a> !
