@@ -5,34 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper scissor </title>
     <script src="app.js"></script>
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
+
     <header> 
          <h2>Rock ,Paper & Sciccor game</h2> 
     </header>
    
 
    <main>
-    <section>
-        <button id="rock">Rock</button>   
-        <button id="paper">Paper</button>
-        <button id="scissor">Scissor</button>
+    <section >
+        <div class="buttons">
+            <a id="rock">Rock</a>   
+            <a id="paper">Paper</a>
+            <a id="scissor">Scissor</a>
+
+        </div>
 
     </section>
-    <section>
-        <div class="userScore">
-            <p>Payer:</p>
-        </div>
-        <div class="Computer">
-            <p>Computer:</p>
-        </div>
-        <div class="draw">
-            <p>Draw:</p>
+
+    <section class="whoWon">
+        <div> <p>Results</p></div>
+       
     
+        <div id="result"></div>
+    </section>
+
+    <section>
+        <div class="results">
+            <div class="userScore">
+                <p >Player Score:   </p>
+                <div id="player">0</div>
+            </div>
+            <div class="Computer">
+                <p >Computer Score:</p>
+                <div id="computer">0</div>
+            </div>
+            <div class="draw">
+                <p >Draw Score:</p>
+                <div id="draw">0</div>
+            </div>
+
         </div>
+       
+       
     
 
     </section>
+
+    
    </main>
    
 

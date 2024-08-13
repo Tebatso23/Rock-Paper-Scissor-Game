@@ -1,24 +1,16 @@
+//ask user name
 
+const name=prompt("Enter your name");
 
 document.addEventListener("DOMContentLoaded", function(){
     
- function computerPlay(){
-    const randomNumForArray=Math.floor(Math.random()*3);
-    console.log(randomNumForArray);
-    const valuesOfTheGame=["Rock","Paper","Scissor"];
-    const computerChoice=valuesOfTheGame[randomNumForArray];
-    console.log(computerChoice)
 
- }   
-
-
+ 
 const rockBtn=document.getElementById('rock');
-console.log(rockBtn)
 const paperBtn=document.getElementById('paper');
-console.log(paperBtn)
 const scissorBtn=document.getElementById('scissor');
 
-//track scores and attept
+//track scores and attempt
 let score=0;
 let computerScore=0;
 let draw=0;
@@ -54,31 +46,34 @@ if(attempt>maxAttempt){
 }
 computerChoice.toLocaleLowerCase();
 Useroption.toLocaleLowerCase();
+const result=document.getElementById("result")
 
 if(computerChoice=="Rock"){
     if(Useroption=="paper"){
-        alert("player won")
+        
+      result.innerHTML=`${name} won`;
         score++;
     }
     else if(Useroption == "rock"){
-        alert("It is a draw")
+        result.innerHTML="It is a draw";
         draw++
     }
     else{
-        alert("computer won");
+        result.innerHTML="Computer won";
         computerScore++;
     }
 }
 else if(computerChoice=="Paper"){
     if(Useroption=="paper"){
-        alert("It is a draw")
+       result.innerHTML="It is a draw";
+        draw++;
     }
     else if(Useroption=="rock"){
-        alert("Computer won")
+        result.innerHTML="Computer won";
         computerScore++;
     }
     else{
-        alert("user won")
+        result.innerHTML=`${name} won`;
         score++;
 
     }
@@ -86,20 +81,26 @@ else if(computerChoice=="Paper"){
 }
 else{
     if(Useroption=="paper"){
-        alert("computer won");
+        result.innerHTML="Computer won";
         computerScore++;
     }
     else if(Useroption=="rock"){
-        alert("User won");
+        result.innerHTML=`${name} won`;
         score++;
     }
     else{
-        alert("draw")
+        result.innerHTML="draw";
         draw++
     }
 }
-}
 
+const playerScore=document.getElementById("player");
+playerScore.innerHTML=score;
+const computerScore1=document.getElementById("computer");
+computerScore1.innerHTML=computerScore;
+const drawscore=document.getElementById("draw");
+drawscore.innerHTML=draw
+}
 
 
 

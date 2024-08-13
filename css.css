@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  margin: 0 auto;
+  padding: 2rem;
+    
+    width: 90%;
+
+}
+header h2{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+section .buttons{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 5rem;
+    align-items: center;
+    border: 1px solid black;
+
+}
+a{
+    border:1px solid black;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+}
+a:hover{
+    background-color: blueviolet;
+    transition: all .4s ease-in-out;
+}
+.whoWon{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border: 1px solid black;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.results{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem;
+    margin: 1rem;
+   text-align: center;
+   border: 1px solid black;
+
+    
+}
